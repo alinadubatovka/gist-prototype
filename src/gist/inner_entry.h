@@ -47,9 +47,8 @@ public:
         //predicate = *(new P(this->getSubpredicates()));
     }
 
-    void insert(const Entry<P> &E) {
+    void insert(Entry<P> *E) {
 //        TODO: uncomment and fix!
-//        E.setParent(this);
-//        node->insert(E);
+        node->insert(E);
     }
 };

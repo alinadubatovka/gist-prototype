@@ -104,7 +104,7 @@ void Gist<P>::insert(LeafEntry<P> E) {
 
     for (InnerEntry<P> *L = path.top().first;; L = path.top().first) {
         if (L->getChildren().size() < max_fanout) {
-            L->insert(E);
+            L->insert(&E);
             break;
         }
         path.pop();
