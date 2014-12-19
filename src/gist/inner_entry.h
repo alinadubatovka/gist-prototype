@@ -10,7 +10,7 @@ class InnerEntry : public Entry<P> {
 private:
     Node<P> *node;
 public:
-    InnerEntry<P> () {
+    InnerEntry<P> (int size) {
         node = new Node<P>(std::vector<Entry<P> *>());
 //        this->predicate = *(new P()); // TODO: Predicates should not be constructed this way
     }
